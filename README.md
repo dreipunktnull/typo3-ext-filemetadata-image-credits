@@ -1,2 +1,7 @@
-# typo3-ext-filemetadata-image-credits
-[WIP] TYPO3 Extension for listing image credits for media on the site
+# TYPO3 Extension Image Credits
+
+TYPO3 Extension for listing image credits for media on the site.
+
+## License
+
+GPLv2+

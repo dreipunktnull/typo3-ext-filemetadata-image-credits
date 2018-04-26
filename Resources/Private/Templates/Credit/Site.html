@@ -1,0 +1,13 @@
+<f:layout name="Default"/>
+
+<f:section name="Main">
+    <f:if condition="{siteResources -> f:count()} > 0">
+        <p>Auf der aktuellen Seite werden die folgenden lizensierten Medien verwendet:</p>
+
+        <ul>
+            <f:for each="{siteResources}" as="resource">
+                <li>&copy; {resource.creator} / {resource.copyright} / {resource.source}</li>
+            </f:for>
+        </ul>
+    </f:if>
+</f:section>

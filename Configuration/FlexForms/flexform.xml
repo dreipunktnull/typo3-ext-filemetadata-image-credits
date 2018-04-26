@@ -1,0 +1,40 @@
+<T3DataStructure>
+    <sheets>
+        <!--
+            ################################
+              SHEET General Settings
+            ################################
+        -->
+        <sDEF>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>Settings</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <!-- View -->
+                    <switchableControllerActions>
+                        <TCEforms>
+                            <label>Mode</label>
+                            <onChange>reload</onChange>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <items>
+                                    <numIndex index="1">
+                                        <numIndex index="0">Rootpage</numIndex>
+                                        <numIndex index="1">Credit->site</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2">
+                                        <numIndex index="0">This page</numIndex>
+                                        <numIndex index="1">Credit->currentPage</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </switchableControllerActions>
+                </el>
+            </ROOT>
+        </sDEF>
+    </sheets>
+</T3DataStructure>

@@ -1,0 +1,10 @@
+plugin.tx_filemetadataimagecredits {
+    settings {
+
+    }
+    view {
+        layoutRootPaths.10 = EXT:filemetadata_image_credits/Resources/Private/Layouts/
+        partialRootPaths.10 = EXT:filemetadata_image_credits/Resources/Private/Partials/
+        templateRootPaths.10 = EXT:filemetadata_image_credits/Resources/Private/Templates/
+    }
+}
