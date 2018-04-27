@@ -1,6 +1,6 @@
 {
     "name": "dreipunktnull/filemetadata-image-credits",
-    "description": "Give credits to whom they belong",
+    "description": "Give credit where credit is due",
     "type": "typo3-cms-extension",
     "require": {
         "php": "^7.0",
