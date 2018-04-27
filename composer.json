@@ -3,6 +3,7 @@
     "description": "Give credits to whom they belong",
     "type": "typo3-cms-extension",
     "require": {
+        "php": "^7.0",
         "typo3/cms-filemetadata": "^7.6|^8.7|^9.2"
     },
     "license": "GPL-2.0-or-later",
