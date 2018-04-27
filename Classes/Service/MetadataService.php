@@ -69,7 +69,7 @@ class MetadataService
             ->where(
                 $qb->expr()->andX(
                     $qb->expr()->isNotNull('meta.copyright'),
-                    $qb->expr()->neq('meta.copyright', ''),
+                    $qb->expr()->neq('meta.copyright', '""'),
                     $qb->expr()->eq('file.type', 2),
                     $qb->expr()->eq('references.hidden', 0),
                     $qb->expr()->in('references.pid', $pageUIDs)
