@@ -1,12 +1,12 @@
 <f:layout name="Default"/>
 
 <f:section name="Main">
-    <f:if condition="{pageResources -> f:count()} > 0">
+    <f:if condition="{pageResources.all -> f:count()} > 0">
 
         <p>Auf der aktuellen Seite werden die folgenden lizensierten Medien verwendet:</p>
 
         <ul>
-            <f:for each="{pageResources}" as="resource">
+            <f:for each="{pageResources.all}" as="resource">
                 <li>&copy; {resource.creator} / {resource.copyright} / {resource.source}</li>
             </f:for>
         </ul>
