@@ -96,9 +96,29 @@ class MetadataService
             ->from('sys_file_metadata')
             ->where(
                 $qb->expr()->in('sys_file_metadata.uid', $uids)
-            );
+            )
+            ->orderBy('sys_file_metadata.copyright', 'ASC');
 
-        return $qb->execute()->fetchAll();
+        $result = $qb->execute()->fetchAll();
+        
+        $metadata = [
+            'all' => $result,
+            'grouped' => []
+        ];
+        
+        foreach ($result as $row)
+        {
+            if ($source = $row['source']) {
+                if (!array_key_exists($source, $metadata['grouped'])) {
+                    $metadata['grouped'][$source] = [];
+                }
+                $metadata['grouped'][$source][] = $row;
+            }
+        }
+
+
+
+        return $metadata;
     }
 
     private function getRootLineForPage(int $pageUid): array
